@@ -633,3 +633,104 @@ Processing by QuotesController#index as HTML
   [1m[35mQuote Load (3.1ms)[0m  SELECT  "quotes".* FROM "quotes"  ORDER BY RANDOM() LIMIT 1
   Rendered quotes/index.html.erb within layouts/application (1.9ms)
 Completed 200 OK in 381ms (Views: 342.2ms | ActiveRecord: 16.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-05-21 17:45:05 +0200
+  [1m[36mActiveRecord::SchemaMigration Load (3.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by QuotesController#index as HTML
+  [1m[35mQuote Load (2.5ms)[0m  SELECT  "quotes".* FROM "quotes"  ORDER BY RANDOM() LIMIT 1
+  Rendered quotes/index.html.erb within layouts/application (2.1ms)
+Completed 500 Internal Server Error in 49ms (ActiveRecord: 7.2ms)
+
+ActionView::Template::Error (Invalid CSS after "...trap-sprockets"": expected selector or at-rule, was "@import "bootst..."
+  (in /home/rormuc-02/Desktop/my-apps/Splurty/app/assets/stylesheets/application.scss:19)):
+    2: <html>
+    3: <head>
+    4:   <title>Splurty</title>
+    5:   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+    6:   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+    7:   <%= csrf_meta_tags %>
+    8: </head>
+  app/assets/stylesheets/application.scss:19
+  app/views/layouts/application.html.erb:5:in `_app_views_layouts_application_html_erb__2537727635422068796_70202252943220'
+
+
+  Rendered /home/rormuc-02/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (8.7ms)
+  Rendered /home/rormuc-02/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.9ms)
+  Rendered /home/rormuc-02/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /home/rormuc-02/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (31.9ms)
+  Rendered /home/rormuc-02/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.6ms)
+  Rendered /home/rormuc-02/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /home/rormuc-02/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/rormuc-02/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/rormuc-02/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (28.3ms)
+  Rendered /home/rormuc-02/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /home/rormuc-02/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /home/rormuc-02/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (54.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-05-21 17:45:53 +0200
+Processing by QuotesController#index as HTML
+  [1m[36mQuote Load (0.6ms)[0m  [1mSELECT  "quotes".* FROM "quotes"  ORDER BY RANDOM() LIMIT 1[0m
+  Rendered quotes/index.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 3404ms (Views: 3401.6ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/quotes-539b1b2d248fcacaf845c897cae976a6.css?body=1" for 127.0.0.1 at 2016-05-21 17:45:57 +0200
+
+
+Started GET "/assets/bootstrap/alert-541810089e2b8243caea75a9cd4a4776.js?body=1" for 127.0.0.1 at 2016-05-21 17:45:57 +0200
+
+
+Started GET "/assets/bootstrap/affix-46ee99718a146d1ad3312ac6cd6686e8.js?body=1" for 127.0.0.1 at 2016-05-21 17:45:57 +0200
+
+
+Started GET "/assets/jquery-fec3d297f67a88e5f7a1357ea79f700c.js?body=1" for 127.0.0.1 at 2016-05-21 17:45:57 +0200
+
+
+Started GET "/assets/application-7c80187d256a4ca99c0837eb00fdaddd.css?body=1" for 127.0.0.1 at 2016-05-21 17:45:57 +0200
+
+
+Started GET "/assets/bootstrap/button-a763bd23c4ac624e11d15566ca135c40.js?body=1" for 127.0.0.1 at 2016-05-21 17:45:57 +0200
+
+
+Started GET "/assets/bootstrap/carousel-4675f16ce6d6bd7ab1b4cfea427db33f.js?body=1" for 127.0.0.1 at 2016-05-21 17:45:57 +0200
+
+
+Started GET "/assets/bootstrap/collapse-fc66d4563fa44a6e6e39f40d0e700c18.js?body=1" for 127.0.0.1 at 2016-05-21 17:45:57 +0200
+
+
+Started GET "/assets/bootstrap/dropdown-431323b9db63fff98b4ee98a14a7ff5e.js?body=1" for 127.0.0.1 at 2016-05-21 17:45:57 +0200
+
+
+Started GET "/assets/bootstrap/tab-2cef9dd4e006d7dad0e43a3473867a49.js?body=1" for 127.0.0.1 at 2016-05-21 17:45:57 +0200
+
+
+Started GET "/assets/bootstrap/transition-0c6fd9aeb837c01b8ba8bc99a98c1718.js?body=1" for 127.0.0.1 at 2016-05-21 17:45:57 +0200
+
+
+Started GET "/assets/bootstrap/scrollspy-1b8dfbeaa83d0f416d621d17285be3e5.js?body=1" for 127.0.0.1 at 2016-05-21 17:45:57 +0200
+
+
+Started GET "/assets/bootstrap/modal-ecb592ab83ae989033082f62481a798c.js?body=1" for 127.0.0.1 at 2016-05-21 17:45:57 +0200
+
+
+Started GET "/assets/bootstrap/tooltip-7506222560b5b257f59c21e707e63205.js?body=1" for 127.0.0.1 at 2016-05-21 17:45:57 +0200
+
+
+Started GET "/assets/bootstrap/popover-d8cf106bfb128eb754093ddf84b1e87b.js?body=1" for 127.0.0.1 at 2016-05-21 17:45:57 +0200
+
+
+Started GET "/assets/bootstrap-sprockets-8e84908213926fe4058ae3ab673ae099.js?body=1" for 127.0.0.1 at 2016-05-21 17:45:57 +0200
+
+
+Started GET "/assets/jquery_ujs-0b858551b498c1d6a8760538ec59b044.js?body=1" for 127.0.0.1 at 2016-05-21 17:45:57 +0200
+
+
+Started GET "/assets/turbolinks-9e3b65eeeac0c6118c3e8c9bcedabb82.js?body=1" for 127.0.0.1 at 2016-05-21 17:45:57 +0200
+
+
+Started GET "/assets/quotes-f6c6ef02137813db1b2df8e2c31983a1.js?body=1" for 127.0.0.1 at 2016-05-21 17:45:57 +0200
+
+
+Started GET "/assets/application-be031faeca7a84a9d5332139153ed8f4.js?body=1" for 127.0.0.1 at 2016-05-21 17:45:57 +0200
