@@ -734,3 +734,684 @@ Started GET "/assets/quotes-f6c6ef02137813db1b2df8e2c31983a1.js?body=1" for 127.
 
 
 Started GET "/assets/application-be031faeca7a84a9d5332139153ed8f4.js?body=1" for 127.0.0.1 at 2016-05-21 17:45:57 +0200
+
+
+Started GET "/" for 127.0.0.1 at 2016-05-21 17:53:01 +0200
+Processing by QuotesController#index as HTML
+  [1m[35mQuote Load (0.8ms)[0m  SELECT  "quotes".* FROM "quotes"  ORDER BY RANDOM() LIMIT 1
+  Rendered quotes/index.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 101ms (Views: 97.8ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/quotes-539b1b2d248fcacaf845c897cae976a6.css?body=1" for 127.0.0.1 at 2016-05-21 17:53:01 +0200
+
+
+Started GET "/assets/application-7c80187d256a4ca99c0837eb00fdaddd.css?body=1" for 127.0.0.1 at 2016-05-21 17:53:01 +0200
+
+
+Started GET "/assets/jquery-fec3d297f67a88e5f7a1357ea79f700c.js?body=1" for 127.0.0.1 at 2016-05-21 17:53:01 +0200
+
+
+Started GET "/assets/bootstrap/alert-541810089e2b8243caea75a9cd4a4776.js?body=1" for 127.0.0.1 at 2016-05-21 17:53:01 +0200
+
+
+Started GET "/assets/bootstrap/carousel-4675f16ce6d6bd7ab1b4cfea427db33f.js?body=1" for 127.0.0.1 at 2016-05-21 17:53:01 +0200
+
+
+Started GET "/assets/bootstrap/affix-46ee99718a146d1ad3312ac6cd6686e8.js?body=1" for 127.0.0.1 at 2016-05-21 17:53:01 +0200
+
+
+Started GET "/assets/bootstrap/button-a763bd23c4ac624e11d15566ca135c40.js?body=1" for 127.0.0.1 at 2016-05-21 17:53:01 +0200
+
+
+Started GET "/assets/bootstrap/collapse-fc66d4563fa44a6e6e39f40d0e700c18.js?body=1" for 127.0.0.1 at 2016-05-21 17:53:01 +0200
+
+
+Started GET "/assets/bootstrap/dropdown-431323b9db63fff98b4ee98a14a7ff5e.js?body=1" for 127.0.0.1 at 2016-05-21 17:53:01 +0200
+
+
+Started GET "/assets/bootstrap/tab-2cef9dd4e006d7dad0e43a3473867a49.js?body=1" for 127.0.0.1 at 2016-05-21 17:53:01 +0200
+
+
+Started GET "/assets/bootstrap/transition-0c6fd9aeb837c01b8ba8bc99a98c1718.js?body=1" for 127.0.0.1 at 2016-05-21 17:53:01 +0200
+
+
+Started GET "/assets/bootstrap/scrollspy-1b8dfbeaa83d0f416d621d17285be3e5.js?body=1" for 127.0.0.1 at 2016-05-21 17:53:01 +0200
+
+
+Started GET "/assets/bootstrap/modal-ecb592ab83ae989033082f62481a798c.js?body=1" for 127.0.0.1 at 2016-05-21 17:53:01 +0200
+
+
+Started GET "/assets/bootstrap/tooltip-7506222560b5b257f59c21e707e63205.js?body=1" for 127.0.0.1 at 2016-05-21 17:53:01 +0200
+
+
+Started GET "/assets/bootstrap/popover-d8cf106bfb128eb754093ddf84b1e87b.js?body=1" for 127.0.0.1 at 2016-05-21 17:53:01 +0200
+
+
+Started GET "/assets/bootstrap-sprockets-8e84908213926fe4058ae3ab673ae099.js?body=1" for 127.0.0.1 at 2016-05-21 17:53:01 +0200
+
+
+Started GET "/assets/jquery_ujs-0b858551b498c1d6a8760538ec59b044.js?body=1" for 127.0.0.1 at 2016-05-21 17:53:01 +0200
+
+
+Started GET "/assets/turbolinks-9e3b65eeeac0c6118c3e8c9bcedabb82.js?body=1" for 127.0.0.1 at 2016-05-21 17:53:01 +0200
+
+
+Started GET "/assets/quotes-f6c6ef02137813db1b2df8e2c31983a1.js?body=1" for 127.0.0.1 at 2016-05-21 17:53:01 +0200
+
+
+Started GET "/assets/application-be031faeca7a84a9d5332139153ed8f4.js?body=1" for 127.0.0.1 at 2016-05-21 17:53:01 +0200
+
+
+Started GET "/" for 127.0.0.1 at 2016-05-28 14:37:56 +0200
+  [1m[36mActiveRecord::SchemaMigration Load (1.9ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by QuotesController#index as HTML
+  [1m[35mQuote Load (2.6ms)[0m  SELECT  "quotes".* FROM "quotes"  ORDER BY RANDOM() LIMIT 1
+  Rendered quotes/index.html.erb within layouts/application (2.2ms)
+Completed 500 Internal Server Error in 1809ms (ActiveRecord: 11.0ms)
+
+ActionView::Template::Error (/home/rormuc-02/Desktop/my-apps/Splurty/app/assets/stylesheets/application.css has already been required):
+    2: <html>
+    3: <head>
+    4:   <title>Splurty</title>
+    5:   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+    6:   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+    7:   <%= csrf_meta_tags %>
+    8: </head>
+  app/views/layouts/application.html.erb:5:in `_app_views_layouts_application_html_erb__3159579025190167602_70179372134420'
+
+
+  Rendered /home/rormuc-02/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (9.0ms)
+  Rendered /home/rormuc-02/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.7ms)
+  Rendered /home/rormuc-02/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /home/rormuc-02/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (34.9ms)
+  Rendered /home/rormuc-02/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /home/rormuc-02/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/rormuc-02/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/rormuc-02/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/rormuc-02/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (28.5ms)
+  Rendered /home/rormuc-02/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /home/rormuc-02/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /home/rormuc-02/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (57.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-05-28 14:41:08 +0200
+Processing by QuotesController#index as HTML
+  [1m[36mQuote Load (0.8ms)[0m  [1mSELECT  "quotes".* FROM "quotes"  ORDER BY RANDOM() LIMIT 1[0m
+  Rendered quotes/index.html.erb within layouts/application (0.2ms)
+Completed 500 Internal Server Error in 1442ms (ActiveRecord: 0.8ms)
+
+ActionView::Template::Error (/home/rormuc-02/Desktop/my-apps/Splurty/app/assets/stylesheets/application.css has already been required):
+    2: <html>
+    3: <head>
+    4:   <title>Splurty</title>
+    5:   <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
+    6:   <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
+    7:   <%= csrf_meta_tags %>
+    8: </head>
+  app/views/layouts/application.html.erb:5:in `_app_views_layouts_application_html_erb__3159579025190167602_70179195990540'
+
+
+  Rendered /home/rormuc-02/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (7.9ms)
+  Rendered /home/rormuc-02/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.0ms)
+  Rendered /home/rormuc-02/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /home/rormuc-02/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (25.1ms)
+  Rendered /home/rormuc-02/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /home/rormuc-02/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/rormuc-02/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/rormuc-02/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/rormuc-02/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (16.6ms)
+  Rendered /home/rormuc-02/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /home/rormuc-02/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /home/rormuc-02/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (32.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-05-28 14:51:34 +0200
+Processing by QuotesController#index as HTML
+  [1m[35mQuote Load (0.7ms)[0m  SELECT  "quotes".* FROM "quotes"  ORDER BY RANDOM() LIMIT 1
+  Rendered quotes/index.html.erb within layouts/application (0.2ms)
+Completed 500 Internal Server Error in 1590ms (ActiveRecord: 0.7ms)
+
+ActionView::Template::Error (/home/rormuc-02/Desktop/my-apps/Splurty/app/assets/stylesheets/application.css has already been required):
+    2: <html>
+    3: <head>
+    4:   <title>Splurty</title>
+    5:   <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
+    6:   <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
+    7:   <%= csrf_meta_tags %>
+    8: </head>
+  app/views/layouts/application.html.erb:5:in `_app_views_layouts_application_html_erb__3159579025190167602_70179195990540'
+
+
+  Rendered /home/rormuc-02/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (8.5ms)
+  Rendered /home/rormuc-02/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.4ms)
+  Rendered /home/rormuc-02/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /home/rormuc-02/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (27.0ms)
+  Rendered /home/rormuc-02/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /home/rormuc-02/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /home/rormuc-02/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/rormuc-02/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.6ms)
+  Rendered /home/rormuc-02/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (22.4ms)
+  Rendered /home/rormuc-02/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /home/rormuc-02/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /home/rormuc-02/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (42.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-05-28 14:55:18 +0200
+Processing by QuotesController#index as HTML
+  [1m[36mQuote Load (0.8ms)[0m  [1mSELECT  "quotes".* FROM "quotes"  ORDER BY RANDOM() LIMIT 1[0m
+  Rendered quotes/index.html.erb within layouts/application (0.2ms)
+Completed 500 Internal Server Error in 1575ms (ActiveRecord: 0.8ms)
+
+ActionView::Template::Error (Invalid CSS after "@import url(http": expected comma, was "://fonts."
+  (in /home/rormuc-02/Desktop/my-apps/Splurty/app/assets/stylesheets/master.css.scss:1)):
+    2: <html>
+    3: <head>
+    4:   <title>Splurty</title>
+    5:   <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
+    6:   <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
+    7:   <%= csrf_meta_tags %>
+    8: </head>
+  app/assets/stylesheets/master.css.scss:1
+  app/views/layouts/application.html.erb:5:in `_app_views_layouts_application_html_erb__3159579025190167602_70179195990540'
+
+
+  Rendered /home/rormuc-02/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (8.8ms)
+  Rendered /home/rormuc-02/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.7ms)
+  Rendered /home/rormuc-02/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /home/rormuc-02/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (28.3ms)
+  Rendered /home/rormuc-02/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /home/rormuc-02/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /home/rormuc-02/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/rormuc-02/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/rormuc-02/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (17.5ms)
+  Rendered /home/rormuc-02/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered /home/rormuc-02/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+  Rendered /home/rormuc-02/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (33.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-05-28 15:42:02 +0200
+  [1m[36mActiveRecord::SchemaMigration Load (2.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by QuotesController#index as HTML
+  [1m[35mQuote Load (2.9ms)[0m  SELECT  "quotes".* FROM "quotes"  ORDER BY RANDOM() LIMIT 1
+  Rendered quotes/index.html.erb within layouts/application (2.3ms)
+Completed 500 Internal Server Error in 1714ms (ActiveRecord: 12.2ms)
+
+ActionView::Template::Error (Invalid CSS after "@import url(http": expected comma, was "://fonts."
+  (in /home/rormuc-02/Desktop/my-apps/Splurty/app/assets/stylesheets/master.css.scss:1)):
+    2: <html>
+    3: <head>
+    4:   <title>Splurty</title>
+    5:   <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
+    6:   <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
+    7:   <%= csrf_meta_tags %>
+    8: </head>
+  app/assets/stylesheets/master.css.scss:1
+  app/views/layouts/application.html.erb:5:in `_app_views_layouts_application_html_erb__1624782290129210113_70033808418640'
+
+
+  Rendered /home/rormuc-02/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (13.8ms)
+  Rendered /home/rormuc-02/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.2ms)
+  Rendered /home/rormuc-02/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /home/rormuc-02/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (43.2ms)
+  Rendered /home/rormuc-02/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.7ms)
+  Rendered /home/rormuc-02/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /home/rormuc-02/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/rormuc-02/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /home/rormuc-02/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (34.3ms)
+  Rendered /home/rormuc-02/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /home/rormuc-02/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /home/rormuc-02/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (66.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-05-28 15:45:41 +0200
+Processing by QuotesController#index as HTML
+  [1m[36mQuote Load (0.7ms)[0m  [1mSELECT  "quotes".* FROM "quotes"  ORDER BY RANDOM() LIMIT 1[0m
+  Rendered quotes/index.html.erb within layouts/application (0.1ms)
+Completed 500 Internal Server Error in 1447ms (ActiveRecord: 0.7ms)
+
+ActionView::Template::Error (Invalid CSS after "	line-height": expected ";", was ": 16px"
+  (in /home/rormuc-02/Desktop/my-apps/Splurty/app/assets/stylesheets/master.css.scss:21)):
+    2: <html>
+    3: <head>
+    4:   <title>Splurty</title>
+    5:   <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
+    6:   <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
+    7:   <%= csrf_meta_tags %>
+    8: </head>
+  app/assets/stylesheets/master.css.scss:21
+  app/views/layouts/application.html.erb:5:in `_app_views_layouts_application_html_erb__1624782290129210113_70033808418640'
+
+
+  Rendered /home/rormuc-02/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (10.2ms)
+  Rendered /home/rormuc-02/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.4ms)
+  Rendered /home/rormuc-02/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /home/rormuc-02/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (29.9ms)
+  Rendered /home/rormuc-02/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /home/rormuc-02/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /home/rormuc-02/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /home/rormuc-02/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/rormuc-02/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (17.7ms)
+  Rendered /home/rormuc-02/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.6ms)
+  Rendered /home/rormuc-02/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /home/rormuc-02/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (34.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-05-28 15:47:02 +0200
+Processing by QuotesController#index as HTML
+  [1m[35mQuote Load (0.8ms)[0m  SELECT  "quotes".* FROM "quotes"  ORDER BY RANDOM() LIMIT 1
+  Rendered quotes/index.html.erb within layouts/application (0.1ms)
+Completed 500 Internal Server Error in 1531ms (ActiveRecord: 0.8ms)
+
+ActionView::Template::Error (Invalid CSS after "	cursor": expected ";", was ": pointer;"
+  (in /home/rormuc-02/Desktop/my-apps/Splurty/app/assets/stylesheets/master.css.scss:22)):
+    2: <html>
+    3: <head>
+    4:   <title>Splurty</title>
+    5:   <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
+    6:   <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
+    7:   <%= csrf_meta_tags %>
+    8: </head>
+  app/assets/stylesheets/master.css.scss:22
+  app/views/layouts/application.html.erb:5:in `_app_views_layouts_application_html_erb__1624782290129210113_70033808418640'
+
+
+  Rendered /home/rormuc-02/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (8.9ms)
+  Rendered /home/rormuc-02/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.6ms)
+  Rendered /home/rormuc-02/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /home/rormuc-02/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (27.3ms)
+  Rendered /home/rormuc-02/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /home/rormuc-02/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/rormuc-02/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/rormuc-02/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.2ms)
+  Rendered /home/rormuc-02/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (17.0ms)
+  Rendered /home/rormuc-02/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered /home/rormuc-02/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (1.8ms)
+  Rendered /home/rormuc-02/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (62.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-05-28 15:47:34 +0200
+Processing by QuotesController#index as HTML
+  [1m[36mQuote Load (0.8ms)[0m  [1mSELECT  "quotes".* FROM "quotes"  ORDER BY RANDOM() LIMIT 1[0m
+  Rendered quotes/index.html.erb within layouts/application (0.1ms)
+DEPRECATION WARNING on line 32, column 16 of /home/rormuc-02/Desktop/my-apps/Splurty/app/assets/stylesheets/master.css.scss:
+Unescaped multiline strings are deprecated and will be removed in a future version of Sass.
+To include a newline in a string, use "\a" or "\a " as in CSS.
+
+
+DEPRECATION WARNING on line 36, column 23 of /home/rormuc-02/Desktop/my-apps/Splurty/app/assets/stylesheets/master.css.scss:
+Unescaped multiline strings are deprecated and will be removed in a future version of Sass.
+To include a newline in a string, use "\a" or "\a " as in CSS.
+
+
+DEPRECATION WARNING on line 37, column 22 of /home/rormuc-02/Desktop/my-apps/Splurty/app/assets/stylesheets/master.css.scss:
+Unescaped multiline strings are deprecated and will be removed in a future version of Sass.
+To include a newline in a string, use "\a" or "\a " as in CSS.
+
+
+DEPRECATION WARNING on line 38, column 26 of /home/rormuc-02/Desktop/my-apps/Splurty/app/assets/stylesheets/master.css.scss:
+Unescaped multiline strings are deprecated and will be removed in a future version of Sass.
+To include a newline in a string, use "\a" or "\a " as in CSS.
+
+
+DEPRECATION WARNING on line 39, column 26 of /home/rormuc-02/Desktop/my-apps/Splurty/app/assets/stylesheets/master.css.scss:
+Unescaped multiline strings are deprecated and will be removed in a future version of Sass.
+To include a newline in a string, use "\a" or "\a " as in CSS.
+
+
+DEPRECATION WARNING on line 40, column 23 of /home/rormuc-02/Desktop/my-apps/Splurty/app/assets/stylesheets/master.css.scss:
+Unescaped multiline strings are deprecated and will be removed in a future version of Sass.
+To include a newline in a string, use "\a" or "\a " as in CSS.
+
+
+DEPRECATION WARNING on line 41, column 23 of /home/rormuc-02/Desktop/my-apps/Splurty/app/assets/stylesheets/master.css.scss:
+Unescaped multiline strings are deprecated and will be removed in a future version of Sass.
+To include a newline in a string, use "\a" or "\a " as in CSS.
+
+
+Completed 500 Internal Server Error in 1652ms (ActiveRecord: 0.8ms)
+
+ActionView::Template::Error (Invalid CSS after "...tom: 1px solid ": expected ";", was "#"
+  (in /home/rormuc-02/Desktop/my-apps/Splurty/app/assets/stylesheets/master.css.scss:55)):
+    2: <html>
+    3: <head>
+    4:   <title>Splurty</title>
+    5:   <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
+    6:   <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
+    7:   <%= csrf_meta_tags %>
+    8: </head>
+  app/assets/stylesheets/master.css.scss:55
+  app/views/layouts/application.html.erb:5:in `_app_views_layouts_application_html_erb__1624782290129210113_70033808418640'
+
+
+  Rendered /home/rormuc-02/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (9.0ms)
+  Rendered /home/rormuc-02/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.7ms)
+  Rendered /home/rormuc-02/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /home/rormuc-02/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (29.8ms)
+  Rendered /home/rormuc-02/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /home/rormuc-02/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /home/rormuc-02/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /home/rormuc-02/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/rormuc-02/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (18.2ms)
+  Rendered /home/rormuc-02/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered /home/rormuc-02/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /home/rormuc-02/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (35.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-05-28 15:48:31 +0200
+Processing by QuotesController#index as HTML
+  [1m[35mQuote Load (0.6ms)[0m  SELECT  "quotes".* FROM "quotes"  ORDER BY RANDOM() LIMIT 1
+  Rendered quotes/index.html.erb within layouts/application (0.2ms)
+DEPRECATION WARNING on line 32, column 16 of /home/rormuc-02/Desktop/my-apps/Splurty/app/assets/stylesheets/master.css.scss:
+Unescaped multiline strings are deprecated and will be removed in a future version of Sass.
+To include a newline in a string, use "\a" or "\a " as in CSS.
+
+
+DEPRECATION WARNING on line 36, column 23 of /home/rormuc-02/Desktop/my-apps/Splurty/app/assets/stylesheets/master.css.scss:
+Unescaped multiline strings are deprecated and will be removed in a future version of Sass.
+To include a newline in a string, use "\a" or "\a " as in CSS.
+
+
+DEPRECATION WARNING on line 37, column 22 of /home/rormuc-02/Desktop/my-apps/Splurty/app/assets/stylesheets/master.css.scss:
+Unescaped multiline strings are deprecated and will be removed in a future version of Sass.
+To include a newline in a string, use "\a" or "\a " as in CSS.
+
+
+DEPRECATION WARNING on line 38, column 26 of /home/rormuc-02/Desktop/my-apps/Splurty/app/assets/stylesheets/master.css.scss:
+Unescaped multiline strings are deprecated and will be removed in a future version of Sass.
+To include a newline in a string, use "\a" or "\a " as in CSS.
+
+
+DEPRECATION WARNING on line 39, column 26 of /home/rormuc-02/Desktop/my-apps/Splurty/app/assets/stylesheets/master.css.scss:
+Unescaped multiline strings are deprecated and will be removed in a future version of Sass.
+To include a newline in a string, use "\a" or "\a " as in CSS.
+
+
+DEPRECATION WARNING on line 40, column 23 of /home/rormuc-02/Desktop/my-apps/Splurty/app/assets/stylesheets/master.css.scss:
+Unescaped multiline strings are deprecated and will be removed in a future version of Sass.
+To include a newline in a string, use "\a" or "\a " as in CSS.
+
+
+DEPRECATION WARNING on line 41, column 23 of /home/rormuc-02/Desktop/my-apps/Splurty/app/assets/stylesheets/master.css.scss:
+Unescaped multiline strings are deprecated and will be removed in a future version of Sass.
+To include a newline in a string, use "\a" or "\a " as in CSS.
+
+
+Completed 500 Internal Server Error in 1636ms (ActiveRecord: 0.6ms)
+
+ActionView::Template::Error (Invalid CSS after "	dfdfdf": expected "{", was ";"
+  (in /home/rormuc-02/Desktop/my-apps/Splurty/app/assets/stylesheets/master.css.scss:56)):
+    2: <html>
+    3: <head>
+    4:   <title>Splurty</title>
+    5:   <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
+    6:   <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
+    7:   <%= csrf_meta_tags %>
+    8: </head>
+  app/assets/stylesheets/master.css.scss:56
+  app/views/layouts/application.html.erb:5:in `_app_views_layouts_application_html_erb__1624782290129210113_70033808418640'
+
+
+  Rendered /home/rormuc-02/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (8.6ms)
+  Rendered /home/rormuc-02/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.5ms)
+  Rendered /home/rormuc-02/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /home/rormuc-02/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (27.9ms)
+  Rendered /home/rormuc-02/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /home/rormuc-02/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /home/rormuc-02/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/rormuc-02/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.2ms)
+  Rendered /home/rormuc-02/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (17.0ms)
+  Rendered /home/rormuc-02/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered /home/rormuc-02/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /home/rormuc-02/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (33.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-05-28 15:49:37 +0200
+Processing by QuotesController#index as HTML
+  [1m[36mQuote Load (0.8ms)[0m  [1mSELECT  "quotes".* FROM "quotes"  ORDER BY RANDOM() LIMIT 1[0m
+  Rendered quotes/index.html.erb within layouts/application (0.2ms)
+DEPRECATION WARNING on line 32, column 16 of /home/rormuc-02/Desktop/my-apps/Splurty/app/assets/stylesheets/master.css.scss:
+Unescaped multiline strings are deprecated and will be removed in a future version of Sass.
+To include a newline in a string, use "\a" or "\a " as in CSS.
+
+
+DEPRECATION WARNING on line 36, column 23 of /home/rormuc-02/Desktop/my-apps/Splurty/app/assets/stylesheets/master.css.scss:
+Unescaped multiline strings are deprecated and will be removed in a future version of Sass.
+To include a newline in a string, use "\a" or "\a " as in CSS.
+
+
+DEPRECATION WARNING on line 37, column 22 of /home/rormuc-02/Desktop/my-apps/Splurty/app/assets/stylesheets/master.css.scss:
+Unescaped multiline strings are deprecated and will be removed in a future version of Sass.
+To include a newline in a string, use "\a" or "\a " as in CSS.
+
+
+DEPRECATION WARNING on line 38, column 26 of /home/rormuc-02/Desktop/my-apps/Splurty/app/assets/stylesheets/master.css.scss:
+Unescaped multiline strings are deprecated and will be removed in a future version of Sass.
+To include a newline in a string, use "\a" or "\a " as in CSS.
+
+
+DEPRECATION WARNING on line 39, column 26 of /home/rormuc-02/Desktop/my-apps/Splurty/app/assets/stylesheets/master.css.scss:
+Unescaped multiline strings are deprecated and will be removed in a future version of Sass.
+To include a newline in a string, use "\a" or "\a " as in CSS.
+
+
+DEPRECATION WARNING on line 40, column 23 of /home/rormuc-02/Desktop/my-apps/Splurty/app/assets/stylesheets/master.css.scss:
+Unescaped multiline strings are deprecated and will be removed in a future version of Sass.
+To include a newline in a string, use "\a" or "\a " as in CSS.
+
+
+DEPRECATION WARNING on line 41, column 23 of /home/rormuc-02/Desktop/my-apps/Splurty/app/assets/stylesheets/master.css.scss:
+Unescaped multiline strings are deprecated and will be removed in a future version of Sass.
+To include a newline in a string, use "\a" or "\a " as in CSS.
+
+
+Completed 500 Internal Server Error in 1646ms (ActiveRecord: 0.8ms)
+
+ActionView::Template::Error (Invalid CSS after "...top: 9px solid ": expected ";", was "#"
+  (in /home/rormuc-02/Desktop/my-apps/Splurty/app/assets/stylesheets/master.css.scss:60)):
+    2: <html>
+    3: <head>
+    4:   <title>Splurty</title>
+    5:   <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
+    6:   <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
+    7:   <%= csrf_meta_tags %>
+    8: </head>
+  app/assets/stylesheets/master.css.scss:60
+  app/views/layouts/application.html.erb:5:in `_app_views_layouts_application_html_erb__1624782290129210113_70033808418640'
+
+
+  Rendered /home/rormuc-02/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (8.7ms)
+  Rendered /home/rormuc-02/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.5ms)
+  Rendered /home/rormuc-02/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /home/rormuc-02/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (28.7ms)
+  Rendered /home/rormuc-02/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /home/rormuc-02/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /home/rormuc-02/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/rormuc-02/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/rormuc-02/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (20.3ms)
+  Rendered /home/rormuc-02/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /home/rormuc-02/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /home/rormuc-02/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (36.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-05-28 15:50:27 +0200
+Processing by QuotesController#index as HTML
+  [1m[35mQuote Load (0.6ms)[0m  SELECT  "quotes".* FROM "quotes"  ORDER BY RANDOM() LIMIT 1
+  Rendered quotes/index.html.erb within layouts/application (0.1ms)
+DEPRECATION WARNING on line 32, column 16 of /home/rormuc-02/Desktop/my-apps/Splurty/app/assets/stylesheets/master.css.scss:
+Unescaped multiline strings are deprecated and will be removed in a future version of Sass.
+To include a newline in a string, use "\a" or "\a " as in CSS.
+
+
+DEPRECATION WARNING on line 36, column 23 of /home/rormuc-02/Desktop/my-apps/Splurty/app/assets/stylesheets/master.css.scss:
+Unescaped multiline strings are deprecated and will be removed in a future version of Sass.
+To include a newline in a string, use "\a" or "\a " as in CSS.
+
+
+DEPRECATION WARNING on line 37, column 22 of /home/rormuc-02/Desktop/my-apps/Splurty/app/assets/stylesheets/master.css.scss:
+Unescaped multiline strings are deprecated and will be removed in a future version of Sass.
+To include a newline in a string, use "\a" or "\a " as in CSS.
+
+
+DEPRECATION WARNING on line 38, column 26 of /home/rormuc-02/Desktop/my-apps/Splurty/app/assets/stylesheets/master.css.scss:
+Unescaped multiline strings are deprecated and will be removed in a future version of Sass.
+To include a newline in a string, use "\a" or "\a " as in CSS.
+
+
+DEPRECATION WARNING on line 39, column 26 of /home/rormuc-02/Desktop/my-apps/Splurty/app/assets/stylesheets/master.css.scss:
+Unescaped multiline strings are deprecated and will be removed in a future version of Sass.
+To include a newline in a string, use "\a" or "\a " as in CSS.
+
+
+DEPRECATION WARNING on line 40, column 23 of /home/rormuc-02/Desktop/my-apps/Splurty/app/assets/stylesheets/master.css.scss:
+Unescaped multiline strings are deprecated and will be removed in a future version of Sass.
+To include a newline in a string, use "\a" or "\a " as in CSS.
+
+
+DEPRECATION WARNING on line 41, column 23 of /home/rormuc-02/Desktop/my-apps/Splurty/app/assets/stylesheets/master.css.scss:
+Unescaped multiline strings are deprecated and will be removed in a future version of Sass.
+To include a newline in a string, use "\a" or "\a " as in CSS.
+
+
+Completed 500 Internal Server Error in 1669ms (ActiveRecord: 0.6ms)
+
+ActionView::Template::Error (Invalid CSS after "	222222": expected "{", was "}"
+  (in /home/rormuc-02/Desktop/my-apps/Splurty/app/assets/stylesheets/master.css.scss:62)):
+    2: <html>
+    3: <head>
+    4:   <title>Splurty</title>
+    5:   <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
+    6:   <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
+    7:   <%= csrf_meta_tags %>
+    8: </head>
+  app/assets/stylesheets/master.css.scss:62
+  app/views/layouts/application.html.erb:5:in `_app_views_layouts_application_html_erb__1624782290129210113_70033808418640'
+
+
+  Rendered /home/rormuc-02/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (8.6ms)
+  Rendered /home/rormuc-02/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.6ms)
+  Rendered /home/rormuc-02/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /home/rormuc-02/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (28.9ms)
+  Rendered /home/rormuc-02/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /home/rormuc-02/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/rormuc-02/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/rormuc-02/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/rormuc-02/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (18.2ms)
+  Rendered /home/rormuc-02/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /home/rormuc-02/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /home/rormuc-02/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (34.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-05-28 15:54:01 +0200
+Processing by QuotesController#index as HTML
+  [1m[36mQuote Load (0.6ms)[0m  [1mSELECT  "quotes".* FROM "quotes"  ORDER BY RANDOM() LIMIT 1[0m
+  Rendered quotes/index.html.erb within layouts/application (0.1ms)
+DEPRECATION WARNING on line 32, column 16 of /home/rormuc-02/Desktop/my-apps/Splurty/app/assets/stylesheets/master.css.scss:
+Unescaped multiline strings are deprecated and will be removed in a future version of Sass.
+To include a newline in a string, use "\a" or "\a " as in CSS.
+
+
+DEPRECATION WARNING on line 36, column 23 of /home/rormuc-02/Desktop/my-apps/Splurty/app/assets/stylesheets/master.css.scss:
+Unescaped multiline strings are deprecated and will be removed in a future version of Sass.
+To include a newline in a string, use "\a" or "\a " as in CSS.
+
+
+DEPRECATION WARNING on line 37, column 22 of /home/rormuc-02/Desktop/my-apps/Splurty/app/assets/stylesheets/master.css.scss:
+Unescaped multiline strings are deprecated and will be removed in a future version of Sass.
+To include a newline in a string, use "\a" or "\a " as in CSS.
+
+
+DEPRECATION WARNING on line 38, column 26 of /home/rormuc-02/Desktop/my-apps/Splurty/app/assets/stylesheets/master.css.scss:
+Unescaped multiline strings are deprecated and will be removed in a future version of Sass.
+To include a newline in a string, use "\a" or "\a " as in CSS.
+
+
+DEPRECATION WARNING on line 39, column 26 of /home/rormuc-02/Desktop/my-apps/Splurty/app/assets/stylesheets/master.css.scss:
+Unescaped multiline strings are deprecated and will be removed in a future version of Sass.
+To include a newline in a string, use "\a" or "\a " as in CSS.
+
+
+DEPRECATION WARNING on line 40, column 23 of /home/rormuc-02/Desktop/my-apps/Splurty/app/assets/stylesheets/master.css.scss:
+Unescaped multiline strings are deprecated and will be removed in a future version of Sass.
+To include a newline in a string, use "\a" or "\a " as in CSS.
+
+
+DEPRECATION WARNING on line 41, column 23 of /home/rormuc-02/Desktop/my-apps/Splurty/app/assets/stylesheets/master.css.scss:
+Unescaped multiline strings are deprecated and will be removed in a future version of Sass.
+To include a newline in a string, use "\a" or "\a " as in CSS.
+
+
+DEPRECATION WARNING on line 69, column 15 of /home/rormuc-02/Desktop/my-apps/Splurty/app/assets/stylesheets/master.css.scss:
+Unescaped multiline strings are deprecated and will be removed in a future version of Sass.
+To include a newline in a string, use "\a" or "\a " as in CSS.
+
+
+DEPRECATION WARNING on line 74, column 15 of /home/rormuc-02/Desktop/my-apps/Splurty/app/assets/stylesheets/master.css.scss:
+Unescaped multiline strings are deprecated and will be removed in a future version of Sass.
+To include a newline in a string, use "\a" or "\a " as in CSS.
+
+
+Completed 200 OK in 1869ms (Views: 1866.2ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/master-4ebfe5bfefa6d88d721a1ae83ac879fb.css?body=1" for 127.0.0.1 at 2016-05-28 15:54:03 +0200
+
+
+Started GET "/assets/application-61bfc095636fcae73cfa5e1bd4f1fd76.css?body=1" for 127.0.0.1 at 2016-05-28 15:54:03 +0200
+
+
+Started GET "/assets/quotes-539b1b2d248fcacaf845c897cae976a6.css?body=1" for 127.0.0.1 at 2016-05-28 15:54:03 +0200
+
+
+Started GET "/assets/jquery-fec3d297f67a88e5f7a1357ea79f700c.js?body=1" for 127.0.0.1 at 2016-05-28 15:54:03 +0200
+
+
+Started GET "/assets/bootstrap/alert-541810089e2b8243caea75a9cd4a4776.js?body=1" for 127.0.0.1 at 2016-05-28 15:54:03 +0200
+
+
+Started GET "/assets/bootstrap/collapse-fc66d4563fa44a6e6e39f40d0e700c18.js?body=1" for 127.0.0.1 at 2016-05-28 15:54:03 +0200
+
+
+Started GET "/assets/bootstrap/carousel-4675f16ce6d6bd7ab1b4cfea427db33f.js?body=1" for 127.0.0.1 at 2016-05-28 15:54:03 +0200
+
+
+Started GET "/assets/bootstrap/affix-46ee99718a146d1ad3312ac6cd6686e8.js?body=1" for 127.0.0.1 at 2016-05-28 15:54:03 +0200
+
+
+Started GET "/assets/bootstrap/button-a763bd23c4ac624e11d15566ca135c40.js?body=1" for 127.0.0.1 at 2016-05-28 15:54:03 +0200
+
+
+Started GET "/assets/bootstrap/dropdown-431323b9db63fff98b4ee98a14a7ff5e.js?body=1" for 127.0.0.1 at 2016-05-28 15:54:03 +0200
+
+
+Started GET "/assets/bootstrap/tab-2cef9dd4e006d7dad0e43a3473867a49.js?body=1" for 127.0.0.1 at 2016-05-28 15:54:03 +0200
+
+
+Started GET "/assets/bootstrap/transition-0c6fd9aeb837c01b8ba8bc99a98c1718.js?body=1" for 127.0.0.1 at 2016-05-28 15:54:03 +0200
+
+
+Started GET "/assets/bootstrap/scrollspy-1b8dfbeaa83d0f416d621d17285be3e5.js?body=1" for 127.0.0.1 at 2016-05-28 15:54:03 +0200
+
+
+Started GET "/assets/bootstrap/modal-ecb592ab83ae989033082f62481a798c.js?body=1" for 127.0.0.1 at 2016-05-28 15:54:03 +0200
+
+
+Started GET "/assets/bootstrap/tooltip-7506222560b5b257f59c21e707e63205.js?body=1" for 127.0.0.1 at 2016-05-28 15:54:03 +0200
+
+
+Started GET "/assets/bootstrap/popover-d8cf106bfb128eb754093ddf84b1e87b.js?body=1" for 127.0.0.1 at 2016-05-28 15:54:03 +0200
+
+
+Started GET "/assets/bootstrap-sprockets-8e84908213926fe4058ae3ab673ae099.js?body=1" for 127.0.0.1 at 2016-05-28 15:54:03 +0200
+
+
+Started GET "/assets/jquery_ujs-0b858551b498c1d6a8760538ec59b044.js?body=1" for 127.0.0.1 at 2016-05-28 15:54:03 +0200
+
+
+Started GET "/assets/turbolinks-9e3b65eeeac0c6118c3e8c9bcedabb82.js?body=1" for 127.0.0.1 at 2016-05-28 15:54:03 +0200
+
+
+Started GET "/assets/quotes-f6c6ef02137813db1b2df8e2c31983a1.js?body=1" for 127.0.0.1 at 2016-05-28 15:54:03 +0200
+
+
+Started GET "/assets/application-be031faeca7a84a9d5332139153ed8f4.js?body=1" for 127.0.0.1 at 2016-05-28 15:54:03 +0200
