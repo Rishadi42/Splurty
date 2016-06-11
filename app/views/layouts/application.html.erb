@@ -26,6 +26,10 @@
 		splurting out unsolicited advice about entrepreneurship since 2016
 		</div>
 
+		<div class= "col-xs-4 slogan">
+		the way you do the things
+		</div>
+
 		<div class= "col-xs-5 links">
 			<%= link_to 'contribute', '#' %>
 			<%= link_to 'About', '#' %>
@@ -33,7 +37,14 @@
 	</header>
 	<hr />
 	<br class="clear" />
-<%= yield %>
+	<div class="container">
+		<%= yield %>
+	</div>
+	<div class="footer">
+		<div class="container">
+				<p class="text-muted">Place sticky footer content here.</p>
+		</div>
+	</div>
 
 </body>
 </html>

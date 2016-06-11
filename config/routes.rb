@@ -21,6 +21,7 @@ Rails.application.routes.draw do
   #       post 'toggle'
   #     end
   root 'quotes#index'
+
   #
   #     collection do
   #       get 'sold'
