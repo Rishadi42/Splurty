@@ -1,4 +1,5 @@
-<h1><%= @quote.saying %></h1>
-<h2><%= @quote.author %></h2>
-<h3><%= @quote.author %></h3>
-
+<% @quotes.each do |quote| %>
+   
+   <h1><%= quote.saying %></h1>
+<h2>- <%= quote.author %></h2>
+<%end %>
