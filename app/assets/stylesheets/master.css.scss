@@ -6,7 +6,7 @@ body {
 	font-family: "Oswald", sans-serif; 
 }
 //This code defines the font style and everything else about the fonts in the body headers for our headers h1 .....
-h1,h2,h3,h4,h5,h6 {
+h1,h3,h4,h5,h6 {
 	font-family: "Rum Raisin", sans-serif; 
 }
 
@@ -76,3 +76,29 @@ hr {
 .logo:hover {
 	text-decoration :none;
 }
+
+.about {
+	font-family: "Palatino Linotype", Palatinoro, Palladio, "URW Palladio L", "Book Antiqua", Baskerville, "Bookman Old Style", "Bitstream Charter", "Nimbus Roman No9 L", Garamond, "Apple Garamond", "ITC Garamond Narrow", "New Century Schoolbook", "Century Schoolbook", "Century Schoolbook L", Georgia, serif;
+  
+}
+
+@media (max-width: 750px) {
+	.footer-blurb { 
+	     text-align: left;
+    }
+}
+
+.modal {
+	font-family: "Palatino Linotype", Palatinoro, Palladio, "URW Palladio L", "Book Antiqua", Baskerville, "Bookman Old Style", "Bitstream Charter", "Nimbus Roman No9 L", Garamond, "Apple Garamond", "ITC Garamond Narrow", "New Century Schoolbook", "Century Schoolbook", "Century Schoolbook L", Georgia, serif;
+  
+}
+
+h2 span {
+	color: #dddddd;
+	font-family: 'nobileregular', sans-serif;
+}
+
+::selection {
+  background-color: #f84342;
+}
+
