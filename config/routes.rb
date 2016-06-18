@@ -20,7 +20,11 @@ Rails.application.routes.draw do
   #       get 'short'
   #       post 'toggle'
   #     end
+ # Splurty::Application.routes.draw do
   root 'quotes#index'
+
+  resources :quotes
+#end
 
   #
   #     collection do
